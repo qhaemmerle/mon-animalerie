@@ -7,6 +7,7 @@
             <p>{{ animal.etat }}</p>
             <p>{{ animal.lieu }}</p>
             <img src={{ animal.photo }} alt="Photo de l'animal" width=256px/>
+            <img src={{ animal.lieu.photo }} alt="Photo de l'équipement" width=256px/>
         </div>
     {% endfor %}
 {% endblock %}

@@ -6,7 +6,8 @@
         <a href="/">{{ animal.id_animal }}</a>
         
     </h1>
-    <img src={{ animal.photo }} alt="Photo de l'animal" width=40%/>
+    <img src={{ animal.photo }} alt="Photo de l'animal" width=256px/>
+    <img src={{ animal.lieu.photo }} alt="Photo de l'équipement" width=256px/>
     <p>{{ animal.type|linebreaksbr }}</p>
     <p>{{ animal.race }}</p>
     <p>{{ animal.etat }}</p>
