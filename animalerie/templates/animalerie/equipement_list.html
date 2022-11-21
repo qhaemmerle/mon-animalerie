@@ -1,0 +1,11 @@
+{% extends 'animalerie/base.html' %}
+
+{% block content %}
+    {% for equipement in equipements %}
+        <div class="equipement">
+            <h2>{{ equipement.id_equip }}</h2>
+            <p>{{ equipement.disponibilite }}</p>
+            <img src={{ equipement.photo }} alt="Photo de l'équipement" width=256px/>
+        </div>
+    {% endfor %}
+{% endblock %}
