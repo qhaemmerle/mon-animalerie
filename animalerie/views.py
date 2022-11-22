@@ -66,7 +66,7 @@ def animal_detail(request, id_animal):
                 nouveau_lieu.disponibilite = "Occupé"
                 nouveau_lieu.save()
                 return redirect('animal_detail', id_animal=id_animal)
-            if animal.etat == 'Affamé' and animal.lieu.id_equip == 'mangeoire':
+            if animal.etat == 'Affamé' and animal.lieu.id_equip == 'Mangeoire':
                 animal.etat = 'Repus'
                 animal.save()
                 ancien_lieu.disponibilite = "Libre"
